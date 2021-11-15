@@ -51,10 +51,11 @@ article h1 {
   cursor: pointer;
 }
 .photos {
-  margin: 10em;
+  margin: 6em 10em 10em 10em;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 .photo-card {
   margin-bottom: 1.8em;
@@ -105,7 +106,6 @@ article h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 .dialog {
   display: flex;
@@ -136,8 +136,7 @@ form header h1 {
 }
 .input {
   width: 100%;
-  font-size: 2.5em;
-  margin-top: 0.2em;
+  height: 3em;
 }
 textarea {
   height: 8em;
@@ -160,4 +159,129 @@ label {
 i.fas.fa-times {
   font-size: 2.5em;
   color: #fff;
+  cursor: pointer;
+}
+.displaynone {
+  display: none;
+}
+
+.lightBox {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+.lightBox img {
+  height: 90%;
+  width: 80%;
+  object-fit: contain;
+}
+.box {
+  display: none;
+}
+.fa-angle-left,
+.fa-angle-right {
+  font-size: 4em;
+  color: #911c1c;
+  cursor: pointer;
+}
+.fa-angle-left {
+  margin-right: 0.5em;
+}
+.fa-angle-right {
+  margin-left: 0.5em;
+}
+
+i.fas.fa-times.closeBtn.closeLightBox {
+  color: #911c1c;
+  align-self: flex-start;
+  margin-top: 2%;
+  cursor: pointer;
+}
+.lightBox video {
+  height: 100%;
+  width: 70%;
+}
+.boxPhoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  /* height: 90%; */
+  width: 100%;
+}
+.lightBox p {
+  /* margin-top: -1em; */
+  font-size: 1.5em;
+  color: #901c1c;
+  max-width: 350px;
+}
+
+/* Total Likes */
+.likesPrice {
+  position: fixed;
+  bottom: 0em;
+  right: 1em;
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  justify-content: center;
+  background-color: #db8876;
+  padding: 0 2em;
+  border-radius: 0.4em 0.4em 0 0;
+}
+.totalLikes {
+  display: flex;
+  align-items: center;
+  margin-right: 3em;
+}
+
+/* DropDown Menue */
+.dropDown {
+  display: flex;
+  margin-left: 10em;
+  margin-top: 5em;
+}
+
+.dropDown label {
+  margin-top: 1.4em;
+}
+#dropDown-menu {
+  list-style: none;
+  background: #901c1c;
+  padding: 1.5em 2em 1.5em 1em;
+  color: #fff;
+  border-radius: 0.4em;
+  width: 9%;
+  position: absolute;
+  margin-left: 8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#dropDown-menu li {
+  font-size: 1.5em;
+  cursor: pointer;
+  width: 100%;
+}
+#dropDown-menu li:nth-child(2) {
+  margin: 1em 0;
+  border-top: solid 0.1em #fff;
+  border-bottom: solid 0.1em #fff;
+  padding: 1em 0;
+}
+.hiden {
+  display: none;
+}
+.fa-chevron-up,
+.fa-chevron-down {
+  float: right;
 }
