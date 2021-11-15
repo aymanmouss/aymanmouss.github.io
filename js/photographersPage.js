@@ -5,7 +5,7 @@ const modal = document.querySelector(".modal");
 const total = document.getElementsByClassName("total");
 import LightBoxClass from "./lightBox.js";
 import FormModal from "./form.js";
-import Likes from "./Likes.js";
+import Likes from "./likes.js";
 import TotalLikes from "./totalLikes.js";
 
 // finding the type of the nedia
