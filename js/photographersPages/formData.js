@@ -31,5 +31,10 @@ export default class FormData {
         modal.classList.add("displaynone");
       }
     });
+    window.addEventListener("keydown", (key) => {
+      if (key.code === "Escape") {
+        modal.classList.add("displaynone");
+      }
+    });
   }
 }
