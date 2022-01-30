@@ -1,0 +1,47 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b656715446.js" crossorigin="anonymous"></script>
+
+    <title>Les Petits Plats</title>
+</head>
+
+<body>
+    <header class="container">
+        <img src="./img/logo-les-petits-plats.png" alt="logo" class="logo">
+        <div class="input-group ">
+            <input type="search" class="searchBar"
+                placeholder="Rechercher un ingrédient, appareil, ustensile ou une recette"
+                aria-label="Search through site content">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+    <main>
+        <aside class="tags">
+            <button class="ingredients-tag tags-filter displaynone"><span class="ingTag"></span> <i
+                    class="far fa-times-circle 1"></i></button>
+            <button class="device-tag tags-filter displaynone"><span class="appTag"></span><i
+                    class="far fa-times-circle 2"></i></button>
+            <button class="utensils-tag tags-filter displaynone"><span class="ustTag"></span> <i
+                    class="far fa-times-circle 3"></i></button>
+        </aside>
+        <section class="btn-search">
+        </section>
+        <p class="infoSearch displaynone">Aucune recette ne correspond à votre critère… vous pouvez chercher « tarte aux
+            pommes », «
+            poisson », etc.
+        </p>
+        <section class="cards">
+
+        </section>
+    </main>
+</body>
+
+</html>
+<script src="./index.js" type="module"></script>
+<!-- <script src="./js/tagsSearch.js" type="module"></script> -->
+<script src="./js/tags.js" type="module"></script>
